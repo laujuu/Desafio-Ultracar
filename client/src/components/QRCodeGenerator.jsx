@@ -1,6 +1,7 @@
 import React from 'react';
 import QRCode from 'qrcode'
 import { useEffect, useState } from 'react';
+import '../style/QRCodeGenerator.css'
 
 function QRCodeGenerator({ cliente, veiculo }) {
   const [src, setSrc] = useState('');

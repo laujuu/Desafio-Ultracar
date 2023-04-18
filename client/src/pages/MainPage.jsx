@@ -14,7 +14,7 @@ function MainPage() {
         <Button onClick={() => navigate("/login-funcionario")} variant="primary" size="lg">
           Area do Atendente
         </Button>
-        <Button variant="primary" size="lg">
+        <Button onClick={() => navigate("/area-do-cliente")} variant="primary" size="lg">
           Area do Cliente
         </Button>
       </div>
