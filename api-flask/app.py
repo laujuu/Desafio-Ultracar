@@ -23,7 +23,7 @@ def login():
 
     # verifica se o usuário e a senha estão corretos
     if username in users and users[username] == password:
-        # retorna um token de autenticação válido por 1 hora
+        # retorna um token de autenticação
         return jsonify({'token': 'Acesso Liberado'}), 200
     else:
         return jsonify({'message': 'Usuário ou senha inválidos'}), 401
