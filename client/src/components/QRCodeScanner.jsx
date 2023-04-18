@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import QrReader from 'react-qr-scanner';
+import { useNavigate } from 'react-router-dom';
 
 function QRCodeScanner() {
+
   const [qrData, setQrData] = useState('');
-  console.log('dataqr', qrData);
+  const navigate = useNavigate();
+  console.log(qrData);
+
   const handleScan = (data) => {
     if (data) {
         const [cliente, veiculo] = data.text.split(' - ');
@@ -15,6 +19,12 @@ function QRCodeScanner() {
   const handleError = (err) => {
     console.error(err);
   };
+
+  useEffect(() => {
+    if (qrData) {
+      navigate('/atendimento-em-andamento', { state: qrData });
+    }
+  }, [qrData, navigate]);
 
   return (
     <div>

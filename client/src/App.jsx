@@ -4,6 +4,7 @@ import MainPage from './pages/MainPage';
 import AreaDoCliente from './pages/AreaDoCliente'
 import LoginFuncionario from './pages/LoginFuncionario';
 import AreaDoFuncionario from './pages/AreaDoFuncionario'
+import AtendimentoEmAndamento from './pages/AtendimentoEmAndamento';
 
 
 import './App.css';
@@ -17,6 +18,7 @@ class App extends React.Component {
           <Route path="/login-funcionario" element={<LoginFuncionario />} />
           <Route path="/area-do-cliente" element={<AreaDoCliente />} />
           <Route path="/area-do-funcionario" element={<AreaDoFuncionario />} />
+          <Route path="/atendimento-em-andamento" element={<AtendimentoEmAndamento />} />
         </Routes>
       </BrowserRouter>
     );
