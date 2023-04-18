@@ -17,6 +17,13 @@ body {
   text-align: center;
 }
 
+button {
+  padding: 10px 50px !important;
+  margin: 1em;
+  width: 30svh !important;
+  background-color: rgb(115, 127, 241) !important;
+}
+
 h1 {
   font-size: 8svh !important;
   background-image: linear-gradient(50deg, #43c9d3, #60e4d8, #45a1d4);
@@ -28,8 +35,6 @@ h1 {
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
