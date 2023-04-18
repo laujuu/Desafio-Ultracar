@@ -9,13 +9,24 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@babel/runtime": "^7.21.0",
+    "bootstrap": "^5.2.3",
+    "get-pixels": "^3.3.3",
+    "jsqr": "^1.4.0",
+    "path-browserify": "^1.0.1",
+    "qrcode": "^1.5.1",
+    "qrcode.react": "^3.1.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-bootstrap": "^2.7.4",
+    "react-dom": "^18.2.0",
+    "react-qr-reader": "^3.0.0-beta-1",
+    "react-router-dom": "^6.10.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
+    "react-qr-scanner": "^1.0.0-alpha.11",
     "vite": "^4.2.0"
   }
 }
