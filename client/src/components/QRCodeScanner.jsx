@@ -22,7 +22,7 @@ function QRCodeScanner() {
 
   useEffect(() => {
     if (qrData) {
-      navigate('/atendimento-em-andamento', { state: qrData });
+      navigate('/iniciar-atendimento', { state: qrData });
     }
   }, [qrData, navigate]);
 
